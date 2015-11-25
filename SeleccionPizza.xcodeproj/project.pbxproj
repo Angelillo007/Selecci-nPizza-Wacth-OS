@@ -20,6 +20,8 @@
 		10A442491C04BE1000A02E50 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A442481C04BE1000A02E50 /* ExtensionDelegate.swift */; };
 		10A4424B1C04BE1000A02E50 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A4424A1C04BE1000A02E50 /* NotificationController.swift */; };
 		10A4424D1C04BE1000A02E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A4424C1C04BE1000A02E50 /* Assets.xcassets */; };
+		10A4425D1C04D46600A02E50 /* Cocina-Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A4425C1C04D46600A02E50 /* Cocina-Pizza.swift */; };
+		10D9AB591C050ABD0094BC7D /* ValorDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D9AB581C050ABD0094BC7D /* ValorDetalle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		10A4424A1C04BE1000A02E50 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		10A4424C1C04BE1000A02E50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10A4424E1C04BE1000A02E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10A4425C1C04D46600A02E50 /* Cocina-Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cocina-Pizza.swift"; sourceTree = "<group>"; };
+		10D9AB581C050ABD0094BC7D /* ValorDetalle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValorDetalle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 				10A4424C1C04BE1000A02E50 /* Assets.xcassets */,
 				10A4424E1C04BE1000A02E50 /* Info.plist */,
 				10A442441C04BE1000A02E50 /* Supporting Files */,
+				10A4425C1C04D46600A02E50 /* Cocina-Pizza.swift */,
+				10D9AB581C050ABD0094BC7D /* ValorDetalle.swift */,
 			);
 			path = "SeleccionPizza WatchKit Extension";
 			sourceTree = "<group>";
@@ -309,6 +315,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A4424B1C04BE1000A02E50 /* NotificationController.swift in Sources */,
+				10D9AB591C050ABD0094BC7D /* ValorDetalle.swift in Sources */,
+				10A4425D1C04D46600A02E50 /* Cocina-Pizza.swift in Sources */,
 				10A442491C04BE1000A02E50 /* ExtensionDelegate.swift in Sources */,
 				10A442471C04BE1000A02E50 /* InterfaceController.swift in Sources */,
 			);
@@ -541,6 +549,7 @@
 				10A442531C04BE1000A02E50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10A442551C04BE1000A02E50 /* Build configuration list for PBXNativeTarget "SeleccionPizza WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +558,7 @@
 				10A442571C04BE1000A02E50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10A442591C04BE1000A02E50 /* Build configuration list for PBXNativeTarget "SeleccionPizza" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +567,7 @@
 				10A4425B1C04BE1000A02E50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

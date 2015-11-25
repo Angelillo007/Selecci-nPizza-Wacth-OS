@@ -1,39 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
-            <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SeleccionPizza_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <group width="1" alignment="left" id="g5C-89-MCS">
+                            <items>
+                                <label alignment="left" text="Tamaño" id="h8c-VA-ayg"/>
+                                <label width="55" height="23" alignment="left" textAlignment="justified" id="573-tO-5yj"/>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" value="1" minimum="1" maximum="3" steps="2" id="38B-27-Vcb">
+                            <connections>
+                                <action selector="nuevoValorTamaño:" destination="AgC-eL-Hgc" id="d6I-Yy-IEi"/>
+                            </connections>
+                        </slider>
+                        <group width="1" alignment="left" id="OaC-9F-rCw">
+                            <items>
+                                <label alignment="left" text="Masa" id="pQN-hI-a6d"/>
+                                <label width="55" height="23" alignment="left" textAlignment="justified" id="a7u-1k-xyo"/>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" value="1" minimum="1" maximum="3" steps="2" id="dGe-f8-eOz">
+                            <connections>
+                                <action selector="nuevoValorMasa:" destination="AgC-eL-Hgc" id="kkj-CM-60X"/>
+                            </connections>
+                        </slider>
+                        <group width="1" alignment="left" id="i3U-Ez-k2g">
+                            <items>
+                                <label alignment="left" text="Queso" id="cSf-kc-Q0D"/>
+                                <label width="55" height="23" alignment="left" textAlignment="justified" id="LG0-2y-uXr"/>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" value="1" minimum="1" maximum="4" steps="3" id="zuf-oM-0kw">
+                            <connections>
+                                <action selector="nuevoValorQueso:" destination="AgC-eL-Hgc" id="G73-6h-JLm"/>
+                            </connections>
+                        </slider>
+                        <group width="114" height="16" alignment="left" id="fkT-IE-1VJ">
+                            <items>
+                                <label alignment="left" text="Ingredientes" id="cdx-PF-ngl"/>
+                                <label width="55" height="23" alignment="left" textAlignment="justified" id="XyD-aN-nh5"/>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" value="1" minimum="1" maximum="9" steps="8" id="s5K-2O-HaK">
+                            <connections>
+                                <action selector="nuevoValorIngredientes:" destination="AgC-eL-Hgc" id="z0y-RB-p7N"/>
+                            </connections>
+                        </slider>
+                        <button width="134" height="31" alignment="left" title="Pedido" id="TSk-oB-HEs">
+                            <connections>
+                                <action selector="cocina" destination="AgC-eL-Hgc" id="AhH-SA-Mxz"/>
+                            </connections>
+                        </button>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="valorIngredientes" destination="XyD-aN-nh5" id="hh3-Im-gnX"/>
+                        <outlet property="valorMasa" destination="a7u-1k-xyo" id="VZa-ON-ozz"/>
+                        <outlet property="valorQueso" destination="LG0-2y-uXr" id="kIM-H8-QbR"/>
+                        <outlet property="valorTamaño" destination="573-tO-5yj" id="huI-Rz-TyR"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="-184" y="298"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--Valor Detalle-->
+        <scene sceneID="5dt-kA-STb">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="Yez-dP-Q9Z" customClass="ValorDetalle" customModule="SeleccionPizza_WatchKit_Extension">
+                    <items>
+                        <label width="131" height="26" alignment="left" text="Pizza" textAlignment="center" id="aGU-mf-D67"/>
+                        <label width="136" height="122" alignment="left" textAlignment="justified" id="6gy-fT-ODu"/>
+                    </items>
+                    <connections>
+                        <outlet property="PedidoCocina" destination="6gy-fT-ODu" id="dC3-Qy-JFQ"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="81" y="269.5"/>
         </scene>
     </scenes>
 </document>
